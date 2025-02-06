@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import { Box, Button, Container, TextField, Typography, styled } from "@mui/material";
 import * as strings from "../assets/helpers/text.strings.json";
 import { FormData } from "../assets/helpers/constats.helper";
 
@@ -9,6 +9,15 @@ interface Errors {
   subPrice: boolean;
   platformCommission: boolean;
 }
+
+const CustomTextField = styled(TextField)(({ theme }) => ({
+  "& .MuiInputBase-root": {
+    height: 56,
+    [theme.breakpoints.down("sm")]: {
+      height: 40,
+    },
+  },
+}));
 
 const EarningCalculator = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -90,7 +99,7 @@ const EarningCalculator = () => {
         }}
       >
         <Typography variant="h6">{strings.avgMonthlyReach}</Typography>
-        <TextField
+        <CustomTextField
           required
           placeholder="2000?"
           id="avgMonthlyReach"
@@ -100,11 +109,10 @@ const EarningCalculator = () => {
           type="number"
           error={errors.avgMonthlyReach}
           helperText={errors.avgMonthlyReach ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} 
         />
 
         <Typography variant="h6">{strings.convRate}</Typography>
-        <TextField
+        <CustomTextField
           required
           placeholder="2?"
           id="convRate"
@@ -114,11 +122,11 @@ const EarningCalculator = () => {
           type="number"
           error={errors.convRate}
           helperText={errors.convRate ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} 
+          sx={{ textAlign: 'center' }}
         />
 
         <Typography variant="h6">{strings.subPrice}</Typography>
-        <TextField
+        <CustomTextField
           required
           placeholder="10?"
           id="subPrice"
@@ -128,11 +136,11 @@ const EarningCalculator = () => {
           type="number"
           error={errors.subPrice}
           helperText={errors.subPrice ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} 
+          sx={{ textAlign: 'center' }}
         />
 
         <Typography variant="h6">{strings.platformCommision}</Typography>
-        <TextField
+        <CustomTextField
           required
           id="platformCommission"
           placeholder="20?"
@@ -142,7 +150,7 @@ const EarningCalculator = () => {
           type="number"
           error={errors.platformCommission}
           helperText={errors.platformCommission ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} 
+          sx={{ textAlign: 'center' }}
         />
 
         <Button

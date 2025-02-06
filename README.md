@@ -1,4 +1,9 @@
 #  "*Fans" Earning Calculator
+![only-ss](https://github.com/user-attachments/assets/caeb7c33-bf9e-4fa1-bd3f-3bd585513b0f)
+
+
+
+
 
 ## Description
 

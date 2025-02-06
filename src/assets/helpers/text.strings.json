@@ -1,0 +1,18 @@
+{
+
+    "about": "About",
+    "notice": "The data from the calculator should be considered approximate, as the calculation is based on specific assumptions that may be incorrect. The creator is not responsible for any misunderstandings, incorrect assumptions, or conclusions. Use at your own risk. If you understand this click the button below:",
+    "noticeInfo": "IMPORTANT NOTICE!",
+    "avgMonthlyReach": "Average monthly reach?",
+    "convRate": " Your conversion rate (%)?",
+    "subPrice": "Subscription fee in USD",
+    "aproxRev": " Estimated revenue (before tax):",
+    "calcBtn": "Calculate",
+    "reqError": "This is field required.",
+    "calculatorBtn": "Calculator",
+    "helloBtn": "Ok, let's go!",
+    "closeInfoBtn": "Ok, got it!",
+    "footerBtn": "About author",
+    "platformCommision": "Platform Commission (%)",
+    "aboutHeader": "About this calculator"
+}

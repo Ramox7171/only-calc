@@ -100,7 +100,7 @@ const EarningCalculator = () => {
           type="number"
           error={errors.avgMonthlyReach}
           helperText={errors.avgMonthlyReach ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} // Wyrównanie tekstu w input
+          sx={{ textAlign: 'center' }} 
         />
 
         <Typography variant="h6">{strings.convRate}</Typography>
@@ -114,7 +114,7 @@ const EarningCalculator = () => {
           type="number"
           error={errors.convRate}
           helperText={errors.convRate ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} // Wyrównanie tekstu w input
+          sx={{ textAlign: 'center' }} 
         />
 
         <Typography variant="h6">{strings.subPrice}</Typography>
@@ -128,7 +128,7 @@ const EarningCalculator = () => {
           type="number"
           error={errors.subPrice}
           helperText={errors.subPrice ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} // Wyrównanie tekstu w input
+          sx={{ textAlign: 'center' }} 
         />
 
         <Typography variant="h6">{strings.platformCommision}</Typography>
@@ -142,7 +142,7 @@ const EarningCalculator = () => {
           type="number"
           error={errors.platformCommission}
           helperText={errors.platformCommission ? strings.reqError : ""}
-          sx={{ textAlign: 'center' }} // Wyrównanie tekstu w input
+          sx={{ textAlign: 'center' }} 
         />
 
         <Button

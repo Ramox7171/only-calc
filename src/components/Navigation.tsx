@@ -12,7 +12,7 @@ const Navigation = ({ contentFn }: NavigationProps) => {
 
     return (
         <>
-            <AppBar>
+            <AppBar position="fixed">
                 <Toolbar sx={{
                     display: 'flex',
                     bgcolor: "#fff",
